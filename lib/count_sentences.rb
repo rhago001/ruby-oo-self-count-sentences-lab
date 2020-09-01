@@ -20,13 +20,12 @@ class String
   end
 
   def count_sentences
-    a=self.split(/\W+/)
+    a=self.split(/\W+/)  # ["one", "two"," three"] 
     a.count
+    self.split(/[.?!]+/).grep(/\S/).count  
+
  end
+   
 
-
-  def complex_string
-    self.split(/\W+/).count  
-  end 
  
 end
